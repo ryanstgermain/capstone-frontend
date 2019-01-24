@@ -23,7 +23,7 @@ export default {
 }
 
 .greeting {
-  margin-left: -220px;
+  margin-left: -180px;
   margin-top: 100px;
   display: flex;
   flex-direction: row;
@@ -31,8 +31,8 @@ export default {
 }
 
 .welcome-text {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .item-1,
@@ -41,7 +41,7 @@ export default {
   position: absolute;
   display: block;
   margin-top: 25px;
-  margin-left: 420px;
+  margin-left: 445px;
 
   width: 60%;
 
