@@ -32,6 +32,7 @@
 .font-fam {
   font-family: "Major Mono Display", monospace;
   font-family: "Poiret One", cursive;
+  font-family: 'Raleway Dots', cursive;
 }
 
 #app {

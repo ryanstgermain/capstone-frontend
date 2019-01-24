@@ -30,8 +30,14 @@
     </div>
     <div class="login-section">
         <h1>Have an account?</h1>
-        <fish-input transparent="true" type="text" class="inputs"></fish-input>
-        <fish-input transparent="true" type="password" class="inputs"></fish-input>
+        <fish-input hint="Username" transparent="true" type="text" class="inputs"></fish-input>
+        <fish-input hint="Password" transparent="true" type="password" class="inputs"></fish-input>
+    </div>
+    <div class="home-btns">
+        <fish-button type="basic">Login</fish-button>
+        <router-link to="/signup">
+            <fish-button type="basic">Create Account</fish-button>
+        </router-link>
     </div>
   </div>
 </template>
@@ -75,16 +81,25 @@ export default {
 }
 
 .inputs {
-  height: 30px;
+  height: 25px;
+  width: 200px;
   margin: 10px;
   transition: 0.6s;
 }
 
 .inputs:hover {
   height: 30px;
-  border: 3px solid #bdbbb0;
+  width: 250px;
+  border: 2px solid #353535;
   margin: 10px;
   transition: 0.6s;
+}
+
+.home-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
 h1 {
