@@ -6,15 +6,15 @@
           <router-link to="/">
             <img src="../public/logo_transparent.png" alt="logo">
           </router-link>
-          <div class="nav-right">
+          <div class="nav-right nav-btns">
             <router-link to="/">
-              <fish-option class="nav-font" index="0" content="Home"></fish-option>
+              <fish-option class="nav-font" index="0" content="Home -"></fish-option>
             </router-link>
             <router-link to="/signup">
-              <fish-option class="nav-font" index="1" content="Sign Up"></fish-option>
+              <fish-option class="nav-font" index="1" content="Sign Up -"></fish-option>
             </router-link>
             <router-link to="/about">
-              <fish-option class="nav-font" index="2" content="About"></fish-option>
+              <fish-option class="nav-font" index="2" content="About -"></fish-option>
             </router-link>
           </div>
         </fish-menu>
@@ -49,8 +49,14 @@
   font-size: 17px;
 }
 
+.nav-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .nav-right {
-  margin-left: 1470px;
+  margin-left: 1460px;
 }
 
 img {
@@ -58,7 +64,9 @@ img {
   width: 120px;
   margin-left: 5px;
   margin-top: 5px;
-  transition: 0.6s;
+  transition: 0.3s;
+  border: 5px solid #353535;
+  border-radius: 30%;
   background-color: #bdbbb0;
 }
 
@@ -67,7 +75,12 @@ img:hover {
   width: 110px;
   margin-left: 10px;
   margin-top: 10px;
-  transition: 0.6s;
+  transition: 0.3s;
+  border: 1px solid #353535;
+  border-radius: 43%;
   background-color: #8a897c;
+  -webkit-box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
+  box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
 }
 </style>
