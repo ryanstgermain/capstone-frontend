@@ -2,12 +2,12 @@
   <div>
     <div class="footer">
       <h5>© 2019 GrailTrader</h5>
-      <span>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin-in"></i>
-        <i class="fas fa-envelope"></i>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
+      <span class="icons">
+        <i class="fab fa-instagram fa-2x icon-ig"></i>
+        <i class="fab fa-linkedin-in fa-2x icon-in"></i>
+        <i class="fab fa-facebook-f fa-2x icon-fb"></i>
+        <i class="fab fa-twitter fa-2x icon-t"></i>
+        <i class="fas fa-envelope fa-2x icon-e"></i>
       </span>
     </div>
   </div>
@@ -21,13 +21,64 @@ export default {
 
 <style scoped>
 .footer {
-  margin-top: 125px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 123px;
   background-color: #ffffff;
   height: 70px;
   width: 100%;
   -webkit-box-shadow: 0px -1px 72px -9px rgba(0, 0, 0, 0.52);
   -moz-box-shadow: 0px -1px 72px -9px rgba(0, 0, 0, 0.52);
   box-shadow: 0px -1px 72px -9px rgba(0, 0, 0, 0.52);
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+  color: #353535;
+}
+
+.icon-ig:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition: 0.3s;
+  color: #e8c80a;
+}
+
+.icon-in:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition: 0.3s;
+  color: #0077b5;
+}
+
+.icon-fb:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition: 0.3s;
+  color: #3B5998;
+}
+
+.icon-t:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition: 0.3s;
+  color: #4099FF;
+}
+
+.icon-e:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition: 0.3s;
+  color: #d34836;
 }
 
 h5 {

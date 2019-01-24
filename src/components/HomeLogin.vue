@@ -4,8 +4,8 @@
       <fish-divider></fish-divider>
     </div>
     <div class="selector">
-      <h1>Start trading!</h1>
-      <h3>Select a location below</h3>
+      <h1 class="start">Start trading!</h1>
+      <h4>Select a location below</h4>
       <fish-select class="location-selection" v-model="singleSelectedValue">
         <fish-option index="0" content="Denver"></fish-option>
         <fish-option index="1" content="Colorado Springs"></fish-option>
@@ -102,15 +102,21 @@ export default {
   margin: 20px;
 }
 
-h1 {
+.start {
   color: #8a897c;
-  font-family: "Raleway Dots";
-  font-size: 40px;
+  font-family: "Quicksand";
+  font-size: 50px;
 }
 
-h3 {
+h1 {
   color: #8a897c;
-  font-family: "Poiret One";
+  font-family: "Quicksand";
+  font-size: 35px;
+}
+
+h4 {
+  color: #8a897c;
+  font-family: "Quicksand";
   margin-top: -5px;
 }
 </style>
