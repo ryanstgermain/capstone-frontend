@@ -6,7 +6,7 @@
     <div class="selector">
       <h1 class="start">Start trading!</h1>
       <h4>Select a location below</h4>
-      <fish-select class="location-selection" v-model="singleSelectedValue">
+      <fish-select class="location-selection selection-font" v-model="singleSelectedValue">
         <fish-option index="0" content="Denver"></fish-option>
         <fish-option index="1" content="Colorado Springs"></fish-option>
         <fish-option index="2" content="Boulder"></fish-option>
@@ -30,13 +30,13 @@
     </div>
     <div class="login-section">
       <h1>Have an account?</h1>
-      <fish-input hint="Username" transparent="true" type="text" class="inputs"></fish-input>
-      <fish-input hint="Password" transparent="true" type="password" class="inputs"></fish-input>
+      <fish-input hint="Username" transparent="true" type="text" class="inputs input-font"></fish-input>
+      <fish-input hint="Password" transparent="true" type="password" class="inputs input-font"></fish-input>
     </div>
     <div class="home-btns">
-      <fish-button type="basic">Login</fish-button>
+      <fish-button class="btn-font" type="basic">Login</fish-button>
       <router-link to="/signup">
-        <fish-button type="basic">Create Account</fish-button>
+        <fish-button class="btn-font" type="basic">Create Account</fish-button>
       </router-link>
     </div>
   </div>
@@ -90,7 +90,6 @@ export default {
 .inputs:hover {
   height: 30px;
   width: 250px;
-  border: 2px solid #353535;
   margin: 10px;
   transition: 0.6s;
 }
@@ -102,10 +101,27 @@ export default {
   margin: 20px;
 }
 
+.btn-font {
+  font-family: "Thasadith";
+  color: #8a897c;
+  font-weight: bold;
+  transition: 0.6s;
+}
+
 .start {
   color: #8a897c;
   font-family: "Quicksand";
   font-size: 50px;
+}
+
+.selection-font {
+  font-family: "Thasadith";
+  color: black;
+  font-weight: bolder;
+}
+
+.input-font {
+  font-family: "Thasadith";
 }
 
 h1 {

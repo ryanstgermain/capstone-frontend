@@ -33,6 +33,8 @@
   font-family: "Major Mono Display", monospace;
   font-family: "Poiret One", cursive;
   font-family: "Quicksand", sans-serif;
+  font-family: 'Raleway Dots', cursive;
+  font-family: 'Thasadith', sans-serif;
 }
 
 #app {
@@ -46,8 +48,9 @@
 }
 
 .nav-font {
-  font-family: "Poiret One";
+  font-family: "Thasadith";
   font-size: 17px;
+  font-weight: 100;
 }
 
 .nav-btns {
