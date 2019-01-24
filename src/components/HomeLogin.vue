@@ -29,15 +29,15 @@
       <fish-divider></fish-divider>
     </div>
     <div class="login-section">
-        <h1>Have an account?</h1>
-        <fish-input hint="Username" transparent="true" type="text" class="inputs"></fish-input>
-        <fish-input hint="Password" transparent="true" type="password" class="inputs"></fish-input>
+      <h1>Have an account?</h1>
+      <fish-input hint="Username" transparent="true" type="text" class="inputs"></fish-input>
+      <fish-input hint="Password" transparent="true" type="password" class="inputs"></fish-input>
     </div>
     <div class="home-btns">
-        <fish-button type="basic">Login</fish-button>
-        <router-link to="/signup">
-            <fish-button type="basic">Create Account</fish-button>
-        </router-link>
+      <fish-button type="basic">Login</fish-button>
+      <router-link to="/signup">
+        <fish-button type="basic">Create Account</fish-button>
+      </router-link>
     </div>
   </div>
 </template>
