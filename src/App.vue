@@ -30,8 +30,8 @@
 }
 
 .font-fam {
-  font-family: 'Major Mono Display', monospace;
-  font-family: 'Poiret One', cursive;
+  font-family: "Major Mono Display", monospace;
+  font-family: "Poiret One", cursive;
 }
 
 #app {
@@ -39,13 +39,13 @@
   background-color: #d2d7df;
 }
 #nav {
-  -webkit-box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
-  -moz-box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
-  box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
+  -webkit-box-shadow: 0px 6px 59px -28px rgba(53, 53, 53, 1);
+  -moz-box-shadow: 0px 6px 59px -28px rgba(53, 53, 53, 1);
+  box-shadow: 0px 6px 59px -28px rgba(53, 53, 53, 1);
 }
 
 .nav-font {
-  font-family: 'Poiret One';
+  font-family: "Poiret One";
   font-size: 17px;
 }
 
@@ -76,11 +76,10 @@ img:hover {
   margin-left: 10px;
   margin-top: 10px;
   transition: 0.3s;
-  border: 1px solid #353535;
   border-radius: 43%;
   background-color: #8a897c;
-  -webkit-box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
-  -moz-box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
-  box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
+  -webkit-box-shadow: 0px 6px 59px -28px rgba(53, 53, 53, 1);
+  -moz-box-shadow: 0px 6px 59px -28px rgba(53, 53, 53, 1);
+  box-shadow: 0px 6px 59px -28px rgba(53, 53, 53, 1);
 }
 </style>

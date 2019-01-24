@@ -12,79 +12,113 @@
 
 <script>
 export default {
-  name: 'Homepage',
-}
+  name: "Homepage"
+};
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .home {
-    display: flex;
-    justify-content: center;
-  }
-
-  .greeting {
-    margin-left: -250px;
-    margin-top: 150px;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-  }
-
-  .welcome-text {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .item-1, 
-  .item-2, 
-  .item-3 {
-	  position: absolute;
-    display: block;
-	  margin-top: 25px;
-    margin-left: 395px;
-  
-    width: 60%;
-  
-    font-size: 24px;
-
-	  animation-duration: 10s;
-	  animation-timing-function: ease-in-out;
-	  animation-iteration-count: infinite;
+.home {
+  display: flex;
+  justify-content: center;
 }
 
-  .item-1{
-	  animation-name: anim-1;
-  }
+.greeting {
+  margin-left: -220px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
 
-  .item-2{
-	  animation-name: anim-2;
-  }
+.welcome-text {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
-  .item-3{
-	  animation-name: anim-3;
-  }
+.item-1,
+.item-2,
+.item-3 {
+  position: absolute;
+  display: block;
+  margin-top: 25px;
+  margin-left: 420px;
 
-  @keyframes anim-1 {
-	  0%, 8.3% { left: -100%; opacity: 0; }
-    8.3%,25% { left: 25%; opacity: 1; }
-    33.33%, 100% { left: 110%; opacity: 0; }
-  }
+  width: 60%;
 
-  @keyframes anim-2 {
-	  0%, 33.33% { left: -100%; opacity: 0; }
-    41.63%, 58.29% { left: 25%; opacity: 1; }
-    66.66%, 100% { left: 110%; opacity: 0; }
-  }
+  font-size: 24px;
 
-  @keyframes anim-3 {
-	  0%, 66.66% { left: -100%; opacity: 0; }
-    74.96%, 91.62% { left: 25%; opacity: 1; }
-    100% { left: 110%; opacity: 0; }
-  }
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
 
-  .font {
-    color: #8a897c;;
-    font-family: 'Major Mono Display';
+.item-1 {
+  animation-name: anim-1;
+}
+
+.item-2 {
+  animation-name: anim-2;
+}
+
+.item-3 {
+  animation-name: anim-3;
+}
+
+.font {
+  color: #8a897c;
+  font-family: "Major Mono Display";
+}
+
+@keyframes anim-1 {
+  0%,
+  8.3% {
+    left: -100%;
+    opacity: 0;
   }
+  8.3%,
+  25% {
+    left: 25%;
+    opacity: 1;
+  }
+  33.33%,
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
+}
+
+@keyframes anim-2 {
+  0%,
+  33.33% {
+    left: -100%;
+    opacity: 0;
+  }
+  41.63%,
+  58.29% {
+    left: 25%;
+    opacity: 1;
+  }
+  66.66%,
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
+}
+
+@keyframes anim-3 {
+  0%,
+  66.66% {
+    left: -100%;
+    opacity: 0;
+  }
+  74.96%,
+  91.62% {
+    left: 25%;
+    opacity: 1;
+  }
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
+}
 </style>
