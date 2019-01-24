@@ -4,17 +4,19 @@
       <div>
         <fish-menu mode="horizontal" defaultActive="1">
           <router-link to="/">
-            <h1>GrailTrader</h1>
+            <img src="../public/logo_transparent.png" alt="logo">
           </router-link>
-          <router-link to="/">
-            <fish-option index="0" content="Home"></fish-option>
-          </router-link>
-          <router-link to="/signup">
-            <fish-option index="1" content="Sign Up"></fish-option>
-          </router-link>
-          <router-link to="/about">
-            <fish-option index="2" content="About"></fish-option>
-          </router-link>
+          <div class="nav-right">
+            <router-link to="/">
+              <fish-option class="nav-font" index="0" content="Home"></fish-option>
+            </router-link>
+            <router-link to="/signup">
+              <fish-option class="nav-font" index="1" content="Sign Up"></fish-option>
+            </router-link>
+            <router-link to="/about">
+              <fish-option class="nav-font" index="2" content="About"></fish-option>
+            </router-link>
+          </div>
         </fish-menu>
       </div>
     </div>
@@ -27,7 +29,13 @@
   margin: 0;
 }
 
+.font-fam {
+  font-family: 'Major Mono Display', monospace;
+  font-family: 'Poiret One', cursive;
+}
+
 #app {
+  height: 100%;
   background-color: #d2d7df;
 }
 #nav {
@@ -36,15 +44,30 @@
   box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
 }
 
-h1 {
-  color: #8a897c;
-  text-align: center;
-  transition: 0.3s;
+.nav-font {
+  font-family: 'Poiret One';
+  font-size: 17px;
 }
 
-h1:hover {
-  color: #bdbbb0;
-  text-align: center;
-  transition: 0.3s;
+.nav-right {
+  margin-left: 1470px;
+}
+
+img {
+  height: 120px;
+  width: 120px;
+  margin-left: 5px;
+  margin-top: 5px;
+  transition: 0.6s;
+  background-color: #bdbbb0;
+}
+
+img:hover {
+  height: 110px;
+  width: 110px;
+  margin-left: 10px;
+  margin-top: 10px;
+  transition: 0.6s;
+  background-color: #8a897c;
 }
 </style>

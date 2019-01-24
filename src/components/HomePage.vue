@@ -1,15 +1,12 @@
 <template>
   <div class="home">
-    <div>
-      <router-link to="/">
-        <div class="welcome">
-          <h3>View Items</h3>
-        </div>
-      </router-link>
+    <div class="greeting">
+      <h2 class="font">Trade your</h2>
+      <h2 class="welcome-text font">|</h2>
+      <h2 class="item-1 font">"Supreme"</h2>
+      <h2 class="item-2 font">"Jordans"</h2>
+      <h2 class="item-3 font">"Artist Merch"</h2>
     </div>
-    <br>
-    <fish-divider></fish-divider>
-    <br>
   </div>
 </template>
 
@@ -21,41 +18,73 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .welcome {
-    margin-top: 80px;
-    height: 30px;
-    width: 200px;
-    background-color: #ffffff;
-    border: 2px solid #8a897c;
-    -webkit-box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
-    -moz-box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
-    box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
-    border-radius: 50px 20px;
-    transition: 0.3s;
-  }
-
-  .welcome:hover {
-    margin-top: 80px;
-    height: 40px;
-    width: 400px;
-    background-color: #bdbbb0;
-    border: 2px solid #8a897c;
-    -webkit-box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
-    -moz-box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
-    box-shadow: 0px 23px 42px -13px rgba(0, 0, 0, 0.62);
-    border-radius: 50px 20px;
-    transition: 0.3s;
-  }
-
   .home {
     display: flex;
     justify-content: center;
   }
-  
-  h3 {
-    color:#8a897c;
+
+  .greeting {
+    margin-left: -250px;
+    margin-top: 150px;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .welcome-text {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .item-1, 
+  .item-2, 
+  .item-3 {
+	  position: absolute;
+    display: block;
+	  margin-top: 25px;
+    margin-left: 395px;
+  
+    width: 60%;
+  
+    font-size: 24px;
+
+	  animation-duration: 10s;
+	  animation-timing-function: ease-in-out;
+	  animation-iteration-count: infinite;
+}
+
+  .item-1{
+	  animation-name: anim-1;
+  }
+
+  .item-2{
+	  animation-name: anim-2;
+  }
+
+  .item-3{
+	  animation-name: anim-3;
+  }
+
+  @keyframes anim-1 {
+	  0%, 8.3% { left: -100%; opacity: 0; }
+    8.3%,25% { left: 25%; opacity: 1; }
+    33.33%, 100% { left: 110%; opacity: 0; }
+  }
+
+  @keyframes anim-2 {
+	  0%, 33.33% { left: -100%; opacity: 0; }
+    41.63%, 58.29% { left: 25%; opacity: 1; }
+    66.66%, 100% { left: 110%; opacity: 0; }
+  }
+
+  @keyframes anim-3 {
+	  0%, 66.66% { left: -100%; opacity: 0; }
+    74.96%, 91.62% { left: 25%; opacity: 1; }
+    100% { left: 110%; opacity: 0; }
+  }
+
+  .font {
+    color: #8a897c;;
+    font-family: 'Major Mono Display';
   }
 </style>

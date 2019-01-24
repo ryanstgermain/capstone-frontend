@@ -11,13 +11,13 @@ export default new Router({
       name: 'home',
       component: Home
     },
-    // {
-    //   path: '/signup',
-    //   name: 'signup',
-    //   component: Signup
-    // }
     {
-      path: '/',
+      path: '/signup',
+      name: 'signup',
+      component: () => import('./views/Signup.vue')
+    },
+    {
+      path: '/about',
       name: 'about',
       component: () => import('./views/About.vue')
     }
