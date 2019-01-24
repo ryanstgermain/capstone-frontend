@@ -62,7 +62,7 @@ export default {
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
   transition: 0.3s;
-  color: #3B5998;
+  color: #3b5998;
 }
 
 .icon-t:hover {
@@ -70,7 +70,7 @@ export default {
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
   transition: 0.3s;
-  color: #4099FF;
+  color: #4099ff;
 }
 
 .icon-e:hover {
@@ -88,6 +88,4 @@ h5 {
   color: #353535;
   font-weight: 300;
 }
-
-
 </style>

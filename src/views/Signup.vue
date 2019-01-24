@@ -1,17 +1,19 @@
 <template>
   <div>
-    <h1>This is a signup page</h1>
     <SignupPage />
+    <Footer />
   </div>
 </template>
 
 <script>
 import SignupPage from '@/components/SignupPage.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'signup',
   components: {
-    SignupPage
+    SignupPage,
+    Footer
   }
 }
 </script>

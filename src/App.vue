@@ -32,7 +32,7 @@
 .font-fam {
   font-family: "Major Mono Display", monospace;
   font-family: "Poiret One", cursive;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 #app {
