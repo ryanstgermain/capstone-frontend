@@ -1,18 +1,21 @@
 <template>
   <div>
-    <ListingsPage />
+    <ListingsTitle />
+    <ListingsList />
     <Footer />
   </div>
 </template>
 
 <script>
-import ListingsPage from '@/components/ListingsPage.vue'
+import ListingsTitle from '@/components/ListingsTitle.vue'
+import ListingsList from '@/components/ListingsList.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Listings',
   components: {
-    ListingsPage,
+    ListingsTitle,
+    ListingsList,
     Footer
   }
 }

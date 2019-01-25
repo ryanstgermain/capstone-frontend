@@ -4,7 +4,7 @@
       <div>
         <fish-menu mode="horizontal" defaultActive="1">
           <router-link to="/">
-            <img src="../public/logo_transparent.png" alt="logo">
+            <img  class="gt-logo" src="../public/logo_transparent.png" alt="logo">
           </router-link>
           <div class="nav-right nav-btns">
             <router-link to="/">
@@ -77,23 +77,24 @@
   margin-left: 1460px;
 }
 
-img {
+.gt-logo {
   height: 120px;
   width: 120px;
   margin-left: 5px;
   margin-top: 5px;
   transition: 0.3s;
-  border: 5px solid #353535;
+  border: 1px solid #8a897c;
   border-radius: 30%;
   background-color: #bdbbb0;
 }
 
-img:hover {
+.gt-logo:hover {
   height: 110px;
   width: 110px;
   margin-left: 10px;
   margin-top: 10px;
   transition: 0.3s;
+  border: 2px solid #353535;
   border-radius: 43%;
   background-color: #8a897c;
   -webkit-box-shadow: 0px 6px 59px -28px rgba(53, 53, 53, 1);

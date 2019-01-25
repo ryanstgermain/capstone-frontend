@@ -33,6 +33,8 @@ export default {
   -webkit-box-shadow: 0px -1px 72px -9px rgba(0, 0, 0, 0.52);
   -moz-box-shadow: 0px -1px 72px -9px rgba(0, 0, 0, 0.52);
   box-shadow: 0px -1px 72px -9px rgba(0, 0, 0, 0.52);
+  position: absolute;
+  bottom: 0;
 }
 
 .icons {

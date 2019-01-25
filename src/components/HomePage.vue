@@ -69,11 +69,6 @@ export default {
   font-family: "Major Mono Display";
 }
 
-/* h2 {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #bdbbb0;
-} */
-
 @keyframes anim-1 {
   0%,
   8.3% {

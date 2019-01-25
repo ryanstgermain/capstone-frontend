@@ -130,9 +130,6 @@ h1 {
   color: #8a897c;
   font-family: "Quicksand";
   font-size: 35px;
-
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #bdbbb0; */
 }
 
 h4 {
