@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import './views/Signup.vue'
 import './views/About.vue'
 import './views/Listings.vue'
+import './views/Item.vue'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/listings',
       name: 'listings',
       component: () => import('./views/Listings.vue')
+    },
+    {
+      path: '/item',
+      name: 'item',
+      component: () => import('./views/Item.vue')
     }
   ]
 })
