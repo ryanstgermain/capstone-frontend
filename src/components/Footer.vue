@@ -8,6 +8,7 @@
         <i class="fab fa-facebook-f fa-2x icon-fb"></i>
         <i class="fab fa-twitter fa-2x icon-t"></i>
         <i class="fas fa-envelope fa-2x icon-e"></i>
+        
       </span>
     </div>
   </div>

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>aboutpage</h1>
+    <div>
+      <h1 class="about-us">About GrailTrader</h1>
+    </div>
   </div>
 </template>
 
@@ -10,7 +12,11 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  
+.about-us {
+  color: #8a897c;
+  font-family: "Quicksand";
+  font-size: 40px;
+  margin: 20px;
+}
 </style>

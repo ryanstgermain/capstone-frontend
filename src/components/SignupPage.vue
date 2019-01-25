@@ -9,11 +9,11 @@
       <h1>Create an account</h1>
       <div class="login-info">
         <h2>Email</h2>
-        <fish-input hint="johnsmith@gmail.com" transparent="true" type="text" class="inputs input-font"></fish-input>
+        <fish-input hint="johnsmith@gmail.com" transparent type="text" class="inputs input-font"></fish-input>
         <h2>Username</h2>
-        <fish-input hint="JohnSmith123" transparent="true" type="text" class="inputs input-font"></fish-input>
+        <fish-input hint="JohnSmith123" transparent type="text" class="inputs input-font"></fish-input>
         <h2>Password</h2>
-        <fish-input hint="Password" transparent="true" type="password" class="inputs input-font"></fish-input>
+        <fish-input hint="Password" transparent type="password" class="inputs input-font"></fish-input>
         <router-link to="/signup">
           <fish-button class="create-btn" type="basic">Create Account</fish-button>
         </router-link>
@@ -24,11 +24,10 @@
 
 <script>
 export default {
-  name: "signup"
+  name: "Signup"
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .centered {
   display: flex;

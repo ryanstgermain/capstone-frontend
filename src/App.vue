@@ -33,14 +33,15 @@
   font-family: "Major Mono Display", monospace;
   font-family: "Poiret One", cursive;
   font-family: "Quicksand", sans-serif;
-  font-family: 'Raleway Dots', cursive;
-  font-family: 'Thasadith', sans-serif;
+  font-family: "Raleway Dots", cursive;
+  font-family: "Thasadith", sans-serif;
 }
 
 #app {
   height: 100%;
   background-color: #d2d7df;
 }
+
 #nav {
   -webkit-box-shadow: 0px 6px 59px -28px rgba(53, 53, 53, 1);
   -moz-box-shadow: 0px 6px 59px -28px rgba(53, 53, 53, 1);
@@ -51,6 +52,13 @@
   font-family: "Thasadith";
   font-size: 17px;
   font-weight: 100;
+}
+
+.nav-font:hover {
+  font-family: "Thasadith";
+  font-size: 17px;
+  font-weight: 100;
+  background-color: aqua;
 }
 
 .nav-btns {
