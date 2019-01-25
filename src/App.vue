@@ -40,6 +40,12 @@
 #app {
   height: 100%;
   background-color: #d2d7df;
+  background: linear-gradient(0deg, #d2d7df, #353535, #ffffff);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 24s ease infinite;
+  -moz-animation: AnimationName 24s ease infinite;
+  animation: AnimationName 24s ease infinite;
 }
 
 #nav {
@@ -93,5 +99,24 @@ img:hover {
   -webkit-box-shadow: 0px 6px 59px -28px rgba(53, 53, 53, 1);
   -moz-box-shadow: 0px 6px 59px -28px rgba(53, 53, 53, 1);
   box-shadow: 0px 6px 59px -28px rgba(53, 53, 53, 1);
+}
+
+
+
+
+ @-webkit-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
 }
 </style>

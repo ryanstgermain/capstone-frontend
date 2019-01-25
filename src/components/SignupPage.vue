@@ -15,7 +15,7 @@
         <h2>Password</h2>
         <fish-input hint="Password" transparent type="password" class="inputs input-font"></fish-input>
         <router-link to="/signup">
-          <fish-button class="create-btn" type="basic">Create Account</fish-button>
+          <fish-button @click="messageSuccessHandler" class="create-btn" type="basic">Create Account</fish-button>
         </router-link>
       </div>
     </div>
@@ -24,7 +24,12 @@
 
 <script>
 export default {
-  name: "Signup"
+  name: "Signup",
+  methods: {
+      messageSuccessHandler () {
+        this.$message.success('Success!', 5000)
+      },
+    }
 };
 </script>
 
