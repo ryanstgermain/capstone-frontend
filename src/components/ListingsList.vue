@@ -98,7 +98,7 @@ export default {
   background-color: #ffffff;
   height: 60px;
   width: 500px;
-  border: 1px solid #bdbbb0;
+  border: 2px solid #bdbbb0;
   border-radius: 10px;
   margin-top: -52px;
   margin-left: 360px;
@@ -120,8 +120,9 @@ h4 {
 }
 
 p {
-  font-family: "Raleway Dots";
-  color: #353535;
-  margin-left: 5px;
+  font-family: "Poiret One";
+  font-weight: 600;
+  color: #8a897c;
+  margin: 5px;
 }
 </style>

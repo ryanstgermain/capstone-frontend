@@ -94,7 +94,7 @@ export default {
   height: 320px;
   background-color: #ffffff;
   border-radius: 10%;
-  border: 2px solid #bdbbb0;
+  border: 3px solid #bdbbb0;
   -webkit-box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
   box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
@@ -132,7 +132,7 @@ export default {
   width: 275px;
   height: 140px;
   background-color: #ffffff;
-  /* border-radius: 20%; */
+  border-radius: 5%;
   border: 2px solid #bdbbb0;
   -webkit-box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
@@ -157,6 +157,7 @@ h4 {
 p {
   font-family: "Poiret One";
   font-weight: 600;
+  color: #8a897c;
   margin: 5px;
 }
 </style>
