@@ -11,6 +11,7 @@
         <fish-divider></fish-divider>
       </div>
       <img class="item-img" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" alt="item-img">
+      <h5>Posted by "user"</h5>
       <div class="item-info">
         <h3>Location</h3>
         <fish-divider class="inner-divider"></fish-divider>
@@ -23,6 +24,14 @@
         <div class="wish-list">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum quod labore voluptatum ipsam repellat sit blanditiis inventore corrupti harum? Quos voluptatum est iusto aut? Maxime commodi omnis consectetur praesentium velit.</p>
         </div>
+      </div>
+      <div class="item-page-right-side">
+        <h3 class="description-title">Description</h3>
+        <fish-divider class="inner-divider-bigger"></fish-divider>
+        <div class="description">
+          <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque provident quidem quod, exercitationem laudantium officiis! Consequuntur perspiciatis molestias magni veritatis quas consectetur, minima aspernatur, reprehenderit exercitationem, nesciunt maiores ducimus id!</p>
+        </div>
+        
       </div>
     </div>
   </div>
@@ -77,7 +86,7 @@ export default {
 .item-img:hover {
   height: 300px;
   width: 300px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-left: 120px;
   margin-top: 5px;
   border: 3px solid #8a897c;
@@ -140,6 +149,46 @@ export default {
   overflow-y: scroll;
 }
 
+.item-page-right-side {
+  float: right;
+  margin-right: 122px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: -320px;
+  width: 1100px;
+  height: 320px;
+  background-color: #ffffff;
+  border: 3px solid #bdbbb0;
+  -webkit-box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45)
+}
+
+.description-title {
+  font-family: "Raleway Dots";
+  font-size: 28px;
+}
+
+.description {
+  width: 900px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 5%;
+  border: 2px solid #bdbbb0;
+  -webkit-box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
+  overflow-y: scroll;
+  margin: 10px;
+}
+
+.description-text {
+  font-size: 25px;
+  padding: 5px;
+}
+
 h3 {
   font-family: "Raleway Dots";
   color: #8a897c;
@@ -152,6 +201,15 @@ h4 {
   color: #8a897c;
   font-weight: bolder;
   margin-left: 10px;
+}
+
+h5 {
+  margin-left: 150px;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  font-size: 15px;
+  color: #8a897c;
+  font-family: "Quicksand";
 }
 
 p {
