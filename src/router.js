@@ -6,6 +6,7 @@ import './views/About.vue'
 import './views/Listings.vue'
 import './views/Item.vue'
 import './views/Chat.vue'
+import './views/Create.vue'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/message',
       name: 'chat',
       component: () => import('./views/Chat.vue')
+    },
+    {
+      path: '/create',
+      name: 'create',
+      component: () => import('./views/Create.vue')
     }
   ]
 })
