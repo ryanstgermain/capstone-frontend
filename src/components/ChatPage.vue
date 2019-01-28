@@ -1,15 +1,20 @@
 <template>
-  <div class="centered">
-    <div class="chat-bg">
-      <div class="chat-window">
-        <div class="chat-text">
-          <h5>Name:</h5>
-          <p>text goes here</p>
+  <div>
+    <router-link to="/item">
+      <i class="fas fa-arrow-circle-left fa-3x back-icon"></i>
+    </router-link>
+    <div class="centered">
+      <div class="chat-bg">
+        <div class="chat-window">
+          <div class="chat-text">
+            <h5>Name:</h5>
+            <p>text goes here</p>
+          </div>
         </div>
-      </div>
-      <div class="chat-controls">
-        <fish-input class="chat-input" type="text" hint="..." transparent></fish-input>
-        <fish-button class="send-btn" type="basic">Send</fish-button>
+        <div class="chat-controls">
+          <fish-input class="chat-input" type="text" hint="..." transparent></fish-input>
+          <fish-button class="send-btn" type="basic">Send</fish-button>
+        </div>
       </div>
     </div>
   </div>
@@ -26,6 +31,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -62px;
 }
 
 .chat-bg {
@@ -36,7 +42,6 @@ export default {
   background-color: #ffffff;
   height: 675px;
   width: 1100px;
-  margin-top: 38px;
   border: 3px solid #bdbbb0;
   border-radius: 25px;
   -webkit-box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
@@ -94,6 +99,21 @@ export default {
   flex-direction: row;
   align-items: baseline;
   padding: 20px;
+}
+
+.back-icon {
+  color: #bdbbb0;
+  transition: 0.3s;
+  margin: 30px;
+}
+
+.back-icon:hover {
+  color: #8a897c;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition: 0.3s;
+  margin: 30px;
 }
 
 h5 {
