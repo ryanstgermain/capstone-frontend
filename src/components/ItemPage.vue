@@ -10,7 +10,9 @@
       <div class="divider">
         <fish-divider></fish-divider>
       </div>
-      <img class="item-img" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" alt="item-img">
+      <div class="item-img-center">
+        <img class="item-img" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" alt="item-img">
+      </div>
       <h5>Posted by "user"</h5>
       <div class="item-info">
         <h3>Location</h3>
@@ -31,7 +33,11 @@
         <div class="description">
           <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque provident quidem quod, exercitationem laudantium officiis! Consequuntur perspiciatis molestias magni veritatis quas consectetur, minima aspernatur, reprehenderit exercitationem, nesciunt maiores ducimus id!</p>
         </div>
-        
+        <div>
+          <router-link to="/message">
+            <i class="fas fa-envelope fa-4x message-icon"></i>
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -57,7 +63,7 @@ export default {
 }
 
 .divider {
-  width: 300px;
+  width: 600px;
   margin-left: 60px;
 }
 
@@ -73,10 +79,16 @@ export default {
   margin-top: -10px;
 }
 
+.item-img-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: -110px;
+}
+
 .item-img {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
+  height: 315px;
+  width: 315px;
   margin-left: 170px;
   margin-top: 20px;
   border: 2px solid #bdbbb0;
@@ -84,11 +96,10 @@ export default {
 }
 
 .item-img:hover {
-  height: 300px;
-  width: 300px;
-  /* border-radius: 50%; */
-  margin-left: 120px;
-  margin-top: 5px;
+  height: 400px;
+  width: 400px;
+  margin-left: 170px;
+  margin-top: 25px;
   border: 3px solid #8a897c;
   transition: 0.3s;
 }
@@ -175,7 +186,6 @@ export default {
   width: 900px;
   height: 200px;
   background-color: #ffffff;
-  border-radius: 5%;
   border: 2px solid #bdbbb0;
   -webkit-box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
@@ -185,8 +195,27 @@ export default {
 }
 
 .description-text {
-  font-size: 25px;
+  font-size: 20px;
   padding: 5px;
+}
+
+.message-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 10px;
+  color: #bdbbb0;
+  transition: 0.3s;
+}
+
+.message-icon:hover {
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; */
+  margin-right: 10px;
+  float: right;
+  color: #8a897c;
+  transition: 0.3s;
 }
 
 h3 {
