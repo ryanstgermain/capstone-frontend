@@ -16,6 +16,12 @@
         <div class="item-description">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae similique ab ipsa labore accusantium maiores asperiores, facere recusandae ducimus cumque, obcaecati velit aspernatur iste dignissimos ex vero beatae optio!</p>
         </div>
+        <div class="item-btns">
+          <router-link to="/edit">
+            <i class="fas fa-pen-square edit-btn fa-2x"></i>
+          </router-link>
+          <i class="fas fa-minus-square delete-btn fa-2x"></i>
+        </div>
       </div>
     </div>
   </div>
@@ -101,8 +107,36 @@ export default {
   border: 2px solid #bdbbb0;
   border-radius: 10px;
   margin-top: -52px;
-  margin-left: 360px;
+  margin-left: 330px;
   overflow-y: scroll;
+}
+
+.item-btns {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-right: 20px;
+  margin-top: -57px;
+}
+
+.edit-btn {
+  color: #bdbbb0;
+  transition: 0.3s;
+}
+
+.delete-btn {
+  color: #bdbbb0;
+  transition: 0.3s;
+}
+
+.edit-btn:hover {
+  color: #8a897c;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  color: #8a897c;
+  transition: 0.3s;
 }
 
 h2 {

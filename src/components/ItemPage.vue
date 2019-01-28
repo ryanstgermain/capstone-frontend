@@ -63,7 +63,7 @@ export default {
 }
 
 .divider {
-  width: 600px;
+  width: 450px;
   margin-left: 60px;
 }
 
@@ -89,7 +89,7 @@ export default {
 .item-img {
   height: 315px;
   width: 315px;
-  margin-left: 170px;
+  /* margin-left: 170px; */
   margin-top: 20px;
   border: 2px solid #bdbbb0;
   transition: 0.3s;
@@ -98,7 +98,7 @@ export default {
 .item-img:hover {
   height: 400px;
   width: 400px;
-  margin-left: 170px;
+  /* margin-left: 170px; */
   margin-top: 25px;
   border: 3px solid #8a897c;
   transition: 0.3s;
