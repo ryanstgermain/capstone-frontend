@@ -7,6 +7,7 @@ import './views/Listings.vue'
 import './views/Item.vue'
 import './views/Chat.vue'
 import './views/Create.vue'
+import './views/Edit.vue'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/create',
       name: 'create',
       component: () => import('./views/Create.vue')
+    },
+    {
+      path: '/edit',
+      name: 'edit',
+      component: () => import ('./views/Edit.vue')
     }
   ]
 })
