@@ -5,6 +5,7 @@ import './views/Signup.vue'
 import './views/About.vue'
 import './views/Listings.vue'
 import './views/Item.vue'
+import './views/Chat.vue'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/item',
       name: 'item',
       component: () => import('./views/Item.vue')
+    },
+    {
+      path: '/message',
+      name: 'chat',
+      component: () => import('./views/Chat.vue')
     }
   ]
 })
