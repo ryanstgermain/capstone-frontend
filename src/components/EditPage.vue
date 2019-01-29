@@ -29,7 +29,7 @@
       </fish-upload>
       <div class="btn">
         <router-link to="/listings">
-            <fish-button class="btn-font" type="basic">Post Listing</fish-button>
+            <fish-button class="btn-font" type="basic">Edit Listing</fish-button>
         </router-link>
       </div>
     </div>
