@@ -1,17 +1,17 @@
 <template>
   <div>
     <div>
-      <div class="listing-title">
+      <div class="listing-title" :key="listings.id">
         <router-link to="/listings">
           <i class="fas fa-arrow-circle-left fa-3x back-icon"></i>
         </router-link>
-        <h1 class="item-title">Item title goes here</h1>
+        <h1 class="item-title">{{listings.title}}</h1>
       </div>
       <div class="divider">
         <fish-divider></fish-divider>
       </div>
       <div class="item-img-center">
-        <img class="item-img" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" alt="item-img">
+        <img class="item-img" :src="listings.image" alt="item-img">
       </div>
       <h5>Posted by "user"</h5>
       <div class="item-info">
@@ -19,19 +19,19 @@
         <fish-divider class="inner-divider"></fish-divider>
         <div class="location-info">
           <i class="fas fa-map-marker-alt fa-1x location-icon"></i>
-          <h4>Location goes here</h4>
+          <h4>{{listings.location}}</h4>
         </div>
         <h3>I want to trade for</h3>
         <fish-divider class="inner-divider-bigger"></fish-divider>
         <div class="wish-list">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum quod labore voluptatum ipsam repellat sit blanditiis inventore corrupti harum? Quos voluptatum est iusto aut? Maxime commodi omnis consectetur praesentium velit.</p>
+          <p>{{listings.list}}</p>
         </div>
       </div>
       <div class="item-page-right-side">
         <h3 class="description-title">Description</h3>
         <fish-divider class="inner-divider-bigger"></fish-divider>
         <div class="description">
-          <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque provident quidem quod, exercitationem laudantium officiis! Consequuntur perspiciatis molestias magni veritatis quas consectetur, minima aspernatur, reprehenderit exercitationem, nesciunt maiores ducimus id!</p>
+          <p class="description-text">{{listings.description}}</p>
         </div>
         <div>
           <router-link to="/message">
@@ -44,8 +44,36 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
-  name: "Itempage"
+  name: "Itempage",
+  data() {
+    return {
+      listings: [],
+      id: 2
+    };
+  },
+  methods: {
+    loadPosts() {
+      var url = "http://localhost:3000/2"
+      return axios.get(url);
+    },
+  },
+  created() {
+    this.loadPosts()
+      .then(response => {
+        this.listings = response.data;
+      })
+      .catch(errors => {
+        this.errors.push(errors);
+      });
+  },
+  getListing(fk) {
+    const url = `http://localhost:3000/${fk}`;
+    console.log(url);
+    return axios.get(url).then(response => response.data);
+  }
 };
 </script>
 

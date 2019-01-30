@@ -6,26 +6,9 @@
     <div class="selector">
       <h1 class="start">Start trading!</h1>
       <h4>Select a location below</h4>
-      <fish-select class="location-selection selection-font" v-model="singleSelectedValue">
-        <router-link to="/listings">
-          <fish-option index="0" content="Denver"></fish-option>
-          <fish-option index="1" content="Colorado Springs"></fish-option>
-          <fish-option index="2" content="Boulder"></fish-option>
-          <fish-option index="3" content="Aurora"></fish-option>
-          <fish-option index="4" content="Fort Collins"></fish-option>
-          <fish-option index="5" content="Grand Junction"></fish-option>
-          <fish-option index="6" content="Greeley"></fish-option>
-          <fish-option index="7" content="Littleton"></fish-option>
-          <fish-option index="8" content="Lakewood"></fish-option>
-          <fish-option index="9" content="Golden"></fish-option>
-          <fish-option index="10" content="Westminster"></fish-option>
-          <fish-option index="11" content="Arvada"></fish-option>
-          <fish-option index="12" content="Broomfield"></fish-option>
-          <fish-option index="13" content="Thornton"></fish-option>
-          <fish-option index="14" content="Castle Rock"></fish-option>
-          <fish-option index="15" content="Lone Tree"></fish-option>
-        </router-link>
-      </fish-select>    
+      <router-link to="/listings">
+        <fish-button class="btn-font" type="basic">View Listings</fish-button>
+      </router-link> 
     </div>
     <div class="divider2">
       <fish-divider></fish-divider>

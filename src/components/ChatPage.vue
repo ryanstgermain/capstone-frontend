@@ -6,14 +6,18 @@
     <div class="centered">
       <div class="chat-bg">
         <div class="chat-window">
-          <div class="chat-text">
-            <h5>Name:</h5>
-            <p>text goes here</p>
+            <div class="chat-text" v-for="(msg, index) in messages" :key="index">
+              <h5>Ryan:</h5>
+              <p>{{ msg.message }}</p>
+            </div>
+            <div class="chat-controls">
+          <form @submit.prevent="sendMessage">
+              <fish-input class="chat-input" type="text" hint="..." transparent v-model="message"></fish-input>
+              <div class="button">
+                <fish-button class="send-btn" type="Submit">Send</fish-button>
+              </div>
+          </form>    
           </div>
-        </div>
-        <div class="chat-controls">
-          <fish-input class="chat-input" type="text" hint="..." transparent></fish-input>
-          <fish-button class="send-btn" type="basic">Send</fish-button>
         </div>
       </div>
     </div>
@@ -21,8 +25,31 @@
 </template>
 
 <script>
+import io from "socket.io-client"
+
 export default {
-  name: "chat"
+  name: "chat",
+  data () {
+    return {
+      message: "",
+      messages: [{message: ""}],
+      socket: io.connect("http://localhost:3000/")
+    }
+  },
+  methods: {
+    sendMessage (e) {
+      e.preventDefault()
+      this.socket.emit("SEND_MESSAGE", {
+        message: this.message
+      })
+      this.message = ""
+    }
+  },
+  mounted () {
+    this.socket.on("MESSAGE", (data) => {
+      this.messages = [...this.messages, data]
+    })
+  }
 };
 </script>
 
@@ -32,6 +59,12 @@ export default {
   justify-content: center;
   align-items: center;
   margin-top: -62px;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .chat-bg {
@@ -70,11 +103,15 @@ export default {
   height: 35px;
   width: 1000px;
   margin-top: 10px;
+  margin-bottom: 130px;
   border: 3px solid #bdbbb0;
   border-radius: 25px;
   -webkit-box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
   box-shadow: 0px 0px 73px -10px rgba(0, 0, 0, 0.45);
+  position: fixed;
+  position: absolute;
+  bottom: 0;
 }
 
 .chat-input {

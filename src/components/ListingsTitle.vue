@@ -6,7 +6,7 @@
           <i class="fas fa-plus-circle fa-3x add-icon"></i>
         </router-link>
       </span>
-      <h1>Listings in "Location"</h1>
+      <h1>Listings in Colorado</h1>
     </div>
   </div>
 </template>
