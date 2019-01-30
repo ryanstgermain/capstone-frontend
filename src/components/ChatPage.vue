@@ -7,16 +7,16 @@
       <div class="chat-bg">
         <div class="chat-window">
             <div class="chat-text" v-for="(msg, index) in messages" :key="index">
-              <h5>Ryan:</h5>
+              <h5>{{ msg.name }}</h5>
               <p>{{ msg.message }}</p>
             </div>
             <div class="chat-controls">
-          <form @submit.prevent="sendMessage">
+            <form @submit.prevent="sendMessage">
               <fish-input class="chat-input" type="text" hint="..." transparent v-model="message"></fish-input>
               <div class="button">
                 <fish-button class="send-btn" type="Submit">Send</fish-button>
               </div>
-          </form>    
+            </form>    
           </div>
         </div>
       </div>
@@ -32,6 +32,7 @@ export default {
   data () {
     return {
       message: "",
+      name: "Ryan:",
       messages: [{message: ""}],
       socket: io.connect("http://localhost:3000/")
     }
@@ -40,7 +41,8 @@ export default {
     sendMessage (e) {
       e.preventDefault()
       this.socket.emit("SEND_MESSAGE", {
-        message: this.message
+        message: this.message,
+        name: this.name
       })
       this.message = ""
     }
@@ -62,9 +64,10 @@ export default {
 }
 
 .button {
-  display: flex;
+  float: right;
+  /* display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: flex-end; */
 }
 
 .chat-bg {
@@ -135,7 +138,7 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  padding: 20px;
+  padding: 10px;
 }
 
 .back-icon {
