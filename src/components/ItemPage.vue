@@ -13,7 +13,7 @@
       <div class="item-img-center">
         <img class="item-img" :src="listings.image" alt="item-img">
       </div>
-      <h5>Posted by "user"</h5>
+      <h5>Posted by Ryan</h5>
       <div class="item-info">
         <h3>Location</h3>
         <fish-divider class="inner-divider"></fish-divider>
@@ -21,8 +21,8 @@
           <i class="fas fa-map-marker-alt fa-1x location-icon"></i>
           <h4>{{listings.location}}</h4>
         </div>
-        <h3>I want to trade for</h3>
-        <fish-divider class="inner-divider-bigger"></fish-divider>
+        <h3>Wish List</h3>
+        <fish-divider class="inner-divider"></fish-divider>
         <div class="wish-list">
           <p>{{listings.list}}</p>
         </div>
@@ -51,12 +51,12 @@ export default {
   data() {
     return {
       listings: [],
-      id: 2
+      id: 3
     };
   },
   methods: {
     loadPosts() {
-      var url = "http://localhost:3000/2"
+      var url = `http://localhost:3000/${this.id}`
       return axios.get(url);
     },
   },
@@ -91,7 +91,7 @@ export default {
 }
 
 .divider {
-  width: 450px;
+  width: 850px;
   margin-left: 60px;
 }
 
@@ -109,14 +109,15 @@ export default {
 
 .item-img-center {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-content: center;
   margin-top: -110px;
+  margin-right: 125px;
 }
 
 .item-img {
   height: 315px;
-  width: 395px;
+  width: 475px;
   margin-top: 20px;
   border: 2px solid #bdbbb0;
   transition: 0.3s;
@@ -124,7 +125,7 @@ export default {
 
 .item-img:hover {
   height: 400px;
-  width: 480px;
+  width: 560px;
   margin-top: 25px;
   border: 3px solid #8a897c;
   transition: 0.3s;

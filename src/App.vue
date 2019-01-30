@@ -38,10 +38,11 @@
 }
 
 #app {
-  height: 100%;
+  /* height: 400%; */
   background-color: #d2d7df;
   background: linear-gradient(0deg, #d2d7df, #ffffff);
   background-size: 400% 400%;
+  margin-bottom: -30px;
 
   -webkit-animation: AnimationName 10s ease infinite;
   -moz-animation: AnimationName 10s ease infinite;

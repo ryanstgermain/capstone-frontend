@@ -36,7 +36,8 @@ export default {
   name: "ListingsList",
   data() {
     return {
-      listings: []
+      listings: [],
+      id: 3
     };
   },
   methods: {
@@ -44,7 +45,7 @@ export default {
       return axios.get("http://localhost:3000/");
     },
     select: function(id) {
-      const post = `http://localhost:3000/`;
+      const post = `http://localhost:3000/${this.id}`;
       console.log(post);
       return axios.get(post).then(response => response.data)
     }
